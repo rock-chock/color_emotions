@@ -1,0 +1,93 @@
+/* Colors used:
+
+rgb(47, 152, 79);        green
+rgb(239, 69, 51);        red
+rgb(230, 222, 197);      beige
+mediumpurple: ;          purple for hover
+
+#6b6b6b;                 dark grey for font
+#777;                    dark grey for strokes and lines of barchart
+#eaeaea;                 light grey fill
+
+*/
+
+
+#jumb-title {
+    font-weight: bold;
+    color: rgb(47, 152, 79);
+}
+
+input {
+    float:left;
+    width:150px;
+    margin-right:40px;
+    margin-bottom:20px;
+}
+button {
+    float:left;
+    margin-right:20px;
+    margin-bottom:15px;
+}
+
+
+
+.error {
+    color: rgb(239, 69, 51);
+}
+
+
+/* Text style for both charts */
+.chart-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6b6b6b;
+    font-family: Arial, Helvetica;
+    margin-top: 40px;
+}
+
+
+/* CSS for bar chart*/
+.bar:hover {
+  fill: mediumpurple;
+}
+.axisX text {
+    font-size: 10px;
+    fill: #777;
+    font-family: Arial, Helvetica;
+}
+.axisY text {
+    font-size: 10px;
+    fill: #777;
+    font-family: Arial, Helvetica;
+}
+.axisX path {
+    stroke: #777;
+}
+.axisY path {
+    stroke: #777;
+}
+.axisX line {
+    stroke: #777;
+}
+.axisY line {
+    stroke: #777;
+}
+
+
+/* CSS for bar calendar*/
+#calendar {
+    margin-top: 40px;
+    margin: 20px;
+}
+.month {
+    margin-right: 10px;
+}
+.month-name {
+    font-size: 70%;
+    fill: #777;
+    font-family: Arial, Helvetica;
+}
+.day:hover {
+    stroke: mediumpurple;
+    stroke-width: 3;
+}

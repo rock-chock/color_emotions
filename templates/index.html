@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+
+{% block subtext %}
+<div class="jumbotron jumbotron-fluid" id="intro" style="margin-top: 5%">
+    <div class="container">
+        <p class="lead"> Automatically generated diary of user emotions </p>
+        <h1 class="display-4" id="jumb-title"> Color emotions </h1>
+        <p class="lead"> Just input a Twitter username and a number of tweets. </p>
+        <p class="lead"> Explore visualizations of people's emotions. Get insights about the general coloring of a person's feelings from the recent Twitter timeline. </p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container-fluid">
+    <form action="/search" method="get" id="form" novalidate>
+        <div class="form-group">
+            <label class="sr-only" for="screen_name">screen_name</label>
+            <input class="form-control" name="screen_name" placeholder="@UserName" autocomplete="off" type="text" id="screen_name" autofocus required>
+            <small id="validate-screen_name" class="form-text text-danger"></small>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="limit">limit</label>
+            <input class="form-control" name="limit" placeholder="tweets limit: number from 1 to 300 " autocomplete="off" type="number" id="limit" min="1" max="300" autofocus required>
+            <small id="validate-limit" class="form-text text-danger"></small>
+        </div>
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="search" disabled>Search</button>
+            <button class="btn btn-outline-secondary" type="button" id="refresh" onClick="window.location.reload();">Refresh Page</button>
+        </div>
+    </form>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="error" style="display:none">
+    <div class="container">
+        <h1 class="display-4" id="error-code"></h1>
+        <p class="lead" id="error-message"></p>
+    </div>
+</div>
+
+
+<div id="charts"  class="container-fluid">
+    <div id="barChartDiv"  class="container-fluid">
+        <svg id="barChart"></svg>
+    </div>
+
+    <div id="calendarDiv"  class="container-fluid" margin-top="50px">
+        <div id="calendar"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='d3.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='d3ScaleChromatic.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='interactivity.js') }}"></script>
+
+{% endblock %}
