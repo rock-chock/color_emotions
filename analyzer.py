@@ -1,4 +1,4 @@
-import nltk
+from nltk.tokenize import TweetTokenizer
 
 class Analyzer():
     """Implements sentiment analysis of one tweet"""
@@ -28,7 +28,7 @@ class Analyzer():
         """
 
         # Use NLTK tweet tokenizer to split given text into get list of words(tokens)
-        tokenizer = nltk.tokenize.TweetTokenizer()
+        tokenizer = TweetTokenizer()
         tokens_tweet = tokenizer.tokenize(text.lower())
 
         # Look for each word in dictionaries: "positives" and "negatives".
