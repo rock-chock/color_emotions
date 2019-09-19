@@ -1,3 +1,5 @@
+import sys
+
 from nltk.tokenize import TweetTokenizer
 
 class Analyzer():
