@@ -61,8 +61,10 @@ def search():
             "message": "Could not get user's timeline"})
 
     # Absolute paths to dictionaries (.txt) of positives and negatives
-    positives = os.path.join(sys.path[0], "positive-words.txt")
-    negatives = os.path.join(sys.path[0], "negative-words.txt")
+    #positives = os.path.join(sys.path[0], "positive-words.txt")
+    #negatives = os.path.join(sys.path[0], "negative-words.txt")
+    positives = "/app/positive-words.txt"
+    negatives = "/app/negative-words.txt"
 
     # Instantiate analyzer
     analyzer = Analyzer(positives, negatives)
