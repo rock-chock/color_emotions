@@ -2,8 +2,7 @@
 
 import html
 import os
-import plotly
-import socket
+#import socket
 
 from twython import Twython
 from twython import TwythonAuthError, TwythonError, TwythonRateLimitError
@@ -39,5 +38,3 @@ def get_user_timeline(screen_name, limit):
         raise RuntimeError("invalid API_KEY and/or API_SECRET") from None
     except TwythonError:
         return None
-
-
