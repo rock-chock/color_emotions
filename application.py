@@ -61,10 +61,6 @@ def search():
             "message": "Could not get user's timeline"})
 
     # Absolute paths to dictionaries (.txt) of positives and negatives
-    #positives = os.path.join(sys.path[0], "positive-words.txt")
-    #negatives = os.path.join(sys.path[0], "negative-words.txt")
-    #positives = "/positive-words.txt"
-    #negatives = "/negative-words.txt"
     positives = os.path.abspath("positive-words.txt")
     negatives = os.path.abspath("negative-words.txt")
 
