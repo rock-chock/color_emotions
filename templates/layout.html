@@ -4,16 +4,16 @@
     <head>
         <!-- http://getbootstrap.com/ -->
         <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet" />
-        
+
         <meta charset="utf-8"/>
         <meta content="initial-scale=1, width=device-width" name="viewport"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        
+
         <!-- css for styling  charts-->
         <link href="{{ url_for('static', filename='css.css') }}" rel="stylesheet" />
-        
+
         <title>Sentiments</title>
-        
+
     </head>
     <body>
         <div class="container"  style="margin-top:10%; margin-bottom:5%; ">
@@ -26,4 +26,9 @@
             {% block body %}{% endblock %}
         </div>
     </body>
+    <footer>
+        <p class="text-muted text-center"> (c)
+            <a href="https://www.linkedin.com/in/kochegarova-elena-10471548/">Elena Kochegarova</a>
+        </p>
+    </footer>
 </html>
