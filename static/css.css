@@ -8,15 +8,22 @@ mediumpurple: ;          purple for hover
 #6b6b6b;                 dark grey for font
 #777;                    dark grey for strokes and lines of barchart
 #eaeaea;                 light grey fill
-
+#aaa                     light grey for font (footer)
 */
 
-
+h1 {
+    font-size: 1.8rem;
+}
 #jumb-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(47, 152, 79);
 }
+.lead {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
 
 input {
     float:left;
