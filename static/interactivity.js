@@ -59,8 +59,8 @@ $(document).ready(function() {
                 .text("Amount of positive, negative and neutral tweets");
 
         // Set canvas for barChart
-        var outerWidth = 500,
-            outerHeight = 400,
+        var outerWidth = 250,
+            outerHeight = 300,
             margin = {top: 20, right: 20, bottom: 20, left: 40},
             innerWidth  = outerWidth  - margin.left - margin.right,
             innerHeight = outerHeight - margin.top  - margin.bottom;

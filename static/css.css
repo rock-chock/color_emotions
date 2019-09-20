@@ -20,8 +20,8 @@ h1 {
     color: rgb(47, 152, 79);
 }
 .lead {
-  font-size: 1rem;
-  font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 
@@ -37,8 +37,8 @@ button {
     margin-bottom:15px;
 }
 footer {
-  color: #aaa;
-  font-size: 0.8em;
+    color: #aaa;
+    font-size: 0.8em;
 }
 
 
@@ -59,7 +59,7 @@ footer {
 
 /* CSS for bar chart*/
 .bar:hover {
-  fill: mediumpurple;
+    fill: mediumpurple;
 }
 .axisX text {
     font-size: 10px;
@@ -85,7 +85,7 @@ footer {
 }
 
 
-/* CSS for bar calendar*/
+/* CSS for calendar heatmap*/
 #calendar {
     margin-top: 40px;
     margin: 20px;
